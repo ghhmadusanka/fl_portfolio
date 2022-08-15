@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:new_im_animations/im_animations.dart' as s;
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../constants.dart';
 import '../../../responsive.dart';
@@ -54,7 +55,11 @@ class HomeBanner extends StatelessWidget {
                 const SizedBox(height: defaultPadding),
                 if (!Responsive.isMobileLarge(context))
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                        launchUrl(Uri.parse(
+                            "https://docs.google.com/document/d/13TgDHGJHBoKmkobR5Y025Dirtfo5S6qXncrnym80ZOM/edit?usp=sharing"));
+
+                    },
                     style: TextButton.styleFrom(
                       padding: const EdgeInsets.symmetric(
                           horizontal: defaultPadding * 2,

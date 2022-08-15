@@ -40,7 +40,7 @@ class SideMenu extends StatelessWidget {
                     ),
                     const AreaInfoText(
                       title: "Mail",
-                      text: "hashan@kasper-soft.com",
+                      text: "ghh.madusanka@gmail.com",
                     ),
                     const AreaInfoText(
                       title: "Mobile",
